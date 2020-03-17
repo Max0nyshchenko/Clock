@@ -31,6 +31,8 @@ body {
 
 .clock {
     font-size: 4.5rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr 1fr 3fr;
 }
 
 .date {
@@ -57,4 +59,9 @@ body {
     100% {
         border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     }
+}
+
+span {
+    margin: 0 0.5vw;
+    justify-self: center;
 }

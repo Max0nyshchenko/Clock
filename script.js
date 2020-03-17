@@ -8,6 +8,12 @@ setInterval(() => {
     let ss = today.getSeconds();
     let date = today.toDateString();
 
-    c.innerText = `${hh.toString().padStart(2, '0')} : ${mm.toString().padStart(2, '0')} : ${ss.toString().padStart(2, '0')}`;
-    d.innerText = date;
+    c.innerHTML = `
+                    <span>${hh.toString().padStart(2, '0')}</span>
+                    <span> : </span>
+                    <span>${mm.toString().padStart(2, '0')}</span>
+                    <span> : </span>
+                    <span>${ss.toString().padStart(2, '0')}</span>
+                    `;
+    d.innerHTML = date;
 });
